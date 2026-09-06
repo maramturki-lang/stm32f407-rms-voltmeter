@@ -23,9 +23,6 @@ DebugConfig/
 *.map
 *.lst
 
-# ---- Fichiers lourds (à héberger ailleurs si besoin) ----
-*.mp4
-*.MOV
 
 # ---- Système ----
 .DS_Store

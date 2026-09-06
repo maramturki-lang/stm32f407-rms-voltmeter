@@ -24,7 +24,7 @@ Table sinus ──> DAC 12 bits (PA4) ──┐
                        ADC 12 bits <┘
                             │
                             v
-              suppression de l'offset (V\\\_REF/2)
+              suppression de l'offset (V\\\\\\\\\\\\\\\_REF/2)
                             │
                             v
                     calcul RMS ──> visualisation (debug / oscilloscope)
@@ -38,12 +38,12 @@ Pour un signal `v(t)` de période `T` :
 
 $$V\_{eff} = \\sqrt{\\frac{1}{T}\\int\_0^T v^2(t),dt}$$
 
-Sur un signal échantillonné `v\\\[n]`, après suppression de la composante continue
-(`v\\\_ac\\\[n] = v\\\[n] − V\\\_REF/2`, soit 1,65 V) :
+Sur un signal échantillonné `v\\\\\\\\\\\\\\\[n]`, après suppression de la composante continue
+(`v\\\\\\\\\\\\\\\_ac\\\\\\\\\\\\\\\[n] = v\\\\\\\\\\\\\\\[n] − V\\\\\\\\\\\\\\\_REF/2`, soit 1,65 V) :
 
 $$V\_{eff} = \\sqrt{\\frac{1}{N}\\sum\_{n=0}^{N-1} v\_{ac}^2\[n]}$$
 
-Pour un sinus pur, on retrouve bien `V\\\_eff ≈ V\\\_max / √2 ≈ 0,707 · V\\\_max`. La méthode
+Pour un sinus pur, on retrouve bien `V\\\\\\\\\\\\\\\_eff ≈ V\\\\\\\\\\\\\\\_max / √2 ≈ 0,707 · V\\\\\\\\\\\\\\\_max`. La méthode
 discrète reste valable même si le signal n'est pas parfaitement sinusoïdal.
 
 \---
@@ -88,8 +88,8 @@ Shannon–Nyquist.
 |`config.c`|Configuration des horloges, GPIO et SysTick|
 |`dac.c`|Génération du sinus (table de valeurs)|
 |`ADC.c`|Acquisition de la tension de retour|
-|`conversion\\\_AN.c`|Conversion des codes ADC en tension et calcul de la valeur efficace|
-|`startup\\\_stm32f411xe.s`|Code de démarrage|
+|`conversion\\\\\\\\\\\\\\\_AN.c`|Conversion des codes ADC en tension et calcul de la valeur efficace|
+|`startup\\\\\\\\\\\\\\\_stm32f411xe.s`|Code de démarrage|
 |`librairie/`|STM32F4xx Standard Peripheral Library|
 
 \---
@@ -98,7 +98,7 @@ Shannon–Nyquist.
 
 Le signal généré a été validé à l'oscilloscope et au Logic Analyzer. Le réglage par
 potentiomètre permet de balayer la fréquence — mesures relevées à **39 Hz** et **78 Hz** —
-et la valeur efficace calculée est cohérente avec la relation théorique `V\\\_max / √2`.
+et la valeur efficace calculée est cohérente avec la relation théorique `V\\\\\\\\\\\\\\\_max / √2`.
 
 Le rapport complet (`docs/`) détaille l'étude théorique, les schémas blocs, le montage et
 les relevés.
@@ -113,7 +113,7 @@ les relevés.
 git clone https://github.com/maramturki-lang/stm32f407-rms-voltmeter.git
 ```
 
-1. Ouvrir `Projet\\\_micro\\\_sujet4\\\_hamza\\\_maram\\\_2AGE2.uvprojx` dans Keil µVision.
+1. Ouvrir `Projet\\\\\\\\\\\\\\\_micro\\\\\\\\\\\\\\\_sujet4\\\\\\\\\\\\\\\_hamza\\\\\\\\\\\\\\\_maram\\\\\\\\\\\\\\\_2AGE2.uvprojx` dans Keil µVision.
 2. `Project > Build Target` (F7).
 3. `Debug > Start/Stop Debug Session` (Ctrl+F5) puis `Flash > Download`.
 
@@ -123,7 +123,7 @@ git clone https://github.com/maramturki-lang/stm32f407-rms-voltmeter.git
 
 * `docs/Rapport.pdf` — rapport final (24 pages)
 * `docs/Presentation.pdf` — support de soutenance
-* Vidéo de démonstration du montage en fonctionnement
+* `docs/demo.mp4` — vidéo de démonstration du montage en fonctionnement
 
 \---
 
