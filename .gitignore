@@ -1,0 +1,33 @@
+# ---- Keil uVision : sorties de compilation ----
+Objects/
+Listings/
+DebugConfig/
+*.uvguix.*
+*.uvoptx
+*.bak
+*.dep
+*.crf
+*.htm
+*.lnp
+*.plg
+*.sct
+*.scvd
+
+# ---- Binaires et objets ----
+*.o
+*.d
+*.axf
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+
+# ---- Fichiers lourds (à héberger ailleurs si besoin) ----
+*.mp4
+*.MOV
+
+# ---- Système ----
+.DS_Store
+Thumbs.db
+*~
