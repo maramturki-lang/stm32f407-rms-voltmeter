@@ -1,4 +1,4 @@
-# Mesure de la valeur efficace (RMS) d'un signal sinusoïdal — STM32F407
+﻿# Mesure de la valeur efficace (RMS) d'un signal sinusoïdal — STM32F407
 
 Chaîne complète de traitement du signal sur **STM32F407VGT6** : génération numérique d'un
 sinus par le **DAC**, réinjection du signal analogique vers l'**ADC**, puis calcul de sa
@@ -110,7 +110,7 @@ les relevés.
 **Prérequis :** Keil µVision 5 + pack de périphériques STM32F4.
 
 ```bash
-git clone https://github.com/<maramturki-lang>/stm32f407-rms-voltmeter.git
+git clone https://github.com/maramturki-lang/stm32f407-rms-voltmeter.git
 ```
 
 1. Ouvrir `Projet\\\_micro\\\_sujet4\\\_hamza\\\_maram\\\_2AGE2.uvprojx` dans Keil µVision.
